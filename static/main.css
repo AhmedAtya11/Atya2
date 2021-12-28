@@ -1,0 +1,18 @@
+
+    .img,svg{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(133, 68, 68, 0.5)) !important;
+        mix-blend-mode: multiply !important;
+    }    
+.navbar-nav{
+    font-weight: 600;
+}
+
+.carousel-caption{
+    position: absolute; /* Position the background text */
+    right: 0 !important ;
+    left: 0 !important;
+    bottom: 0 !important; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    width: 100% !important; /* Full width */
+}    
+

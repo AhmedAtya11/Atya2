@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-white shadow" id="mynav" style="opacity:0.99 !important;">
+  <div class="container-fluid">
+    <a class="navbar-brand d-none d-sm-block " href="#"><img src="{%static 'img/Group 20.png' %}" style="width: 16.2rem;" alt=""> </a>
+    <a class="navbar-brand d-sm-none" href="#"><img src="{%static 'img/Group 22.png' %}" alt="" style="width: 3.2rem;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav " style="margin-left:auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-grow" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-grow" href="#About us">About us</a>
+          </li>
+          <li class="nav-item ">
+            <a class="btn btn-primary ms-2 hvr-grow" href="login" role="button">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!---------Cover section------------------------------------------------------------------------>
+<header class="masthead" style="height: 100vh;
+  min-height: 500px;
+  background-image: url('https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/07/20162255/iStock-1157887211.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  background-color: #5f6f80!important;
+  background-blend-mode: multiply;">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center text-white " style="margin-top:10rem">
+        <h1 class="fw-bold fs-1">The world has become digital</h1>
+        <p class="lead" style="margin-bottom:5rem!important;">Now it's time for Health Digitalization</p>
+		<img src="trade.svg" alt="" class="img-responsive" style="min-width:150px; display:flex;margin:6%;  margin-right:auto; margin-left:auto">
+      </div>
+    </div>
+  </div>
+</header>
+<!------------------------------------------------------------------------------------------------------------------->
+  <!--Services section-->
+  <section>
+    <div class="header my-3 text-center" id="Services">
+      <h1 class="fw-bold">Our services</h1>
+      <h6 class="lead">هنا نعرض لكم خدماتنا</h6>
+    </div>
+    <div class="row mx-auto" data-masonry="{"percentPosition": true }" >
+      <div class="col-md-6 mx-auto my-3 hvr-shrink">
+        <div class="shadow  bg-body rounded">
+        <div class="card ">
+          <div class="card-body justify-content-center text-center ">
+            <img src="static/img/doctor-svgrepo-com.svg" alt="" class=" mx-auto m-3 d-block" style="width:5rem;">
+            <h4 class="fw-bold">Doctor</h4>
+            <p class="lead">Our primary care providers have expertise in Family Medicine, Internal Medicine and Pediatric and Adolescent Medicine.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-6  mx-auto my-3 hvr-shrink">
+        <div class="shadow  bg-body rounded">
+        <div class="card bg-light ">
+          <div class="card-body justify-content-center text-center">
+            <img src="static/img/patient-svgrepo-com.svg" alt="" class=" mx-auto m-3 d-block" style="width:5rem;">
+            <h4 class="fw-bold">Patient</h4>
+            <p class="lead">Access your medical records and communicate with your care team from your favorite digital device.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    </section>
+<!---------------------------------------------------------------------------------------------------------------->
+    <!--About us section-->
+    <section>
+      <div class="header my-2 text-center p-3 " id="About us">
+        <h1 class="fw-bold">About us</h1>
+        <h6 class="lead">عن مشروعنا</h6>
+      </div>
+      <div class="row flex-row-reverse mx-3 rounded " data-masonry="{"percentPosition": true }" >
+        <div class="col-lg-6 col-12 d-none d-lg-block">
+         <img data-src="https://lh3.googleusercontent.com/p/AF1QipPcmyEuKJIcjNnbS3IWn8Fg1Udh3l6r1hkezY3f=s1600-w400" class="lazyload img d-block w-100 my-auto  rounded" id="fac" style="height: auto; clip-path:fill-box;" alt="">
+        </div>
+		<div class="col-lg-6 col-12 bg-success text-white rounded p-3 text-lg-start text-center">
+          <h4 class="my-3 fw-bold">Digital transformation of hospital management system</h4>
+          <p>We are a group of students at the 4th year of Communication and Electronics Department at the Faculty of Engineering - Alexandria university. This website is our graduation project and it is about the concept of digital transformation in medical field.</p>
+          <hr class="my-2">
+          <p >Our aim is to improve the level of healthcare either for patients or for healthcare givers under the concept of UX (user experience) optimisation.</p>
+          <hr class="my-2">
+          <p >As a long-term vision, we want to create the missing link among all people in the medical field. We want to connect all health associations in Egypt to introduce the optimal experience for patientsand healthcare givers.</p>
+          <hr class="my-2">
+          <p >We know that it's a big dream, but the generous care from the country towards the digitalization is our greatest motivator.</p>
+        </div>
+		
+      </section>
+    <div class="row mx-auto" data-masonry="{"percentPosition": true }" >
+      <div class="col-12 mx-auto my-3 ">
+        <div class="shadow  bg-body rounded">
+        <div class="card border-dark " >
+          <div class="row g-0">
+            <div class="col-md-5 mx-auto ">
+              <img src="static/img/Egypt_Vision_2030_logo.jpg" class="img rounded-start w-100" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor:pointer;" alt="...">
+			  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">2030 Vision</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="{%static 'img/Egypt_Vision_2030_logo.jpg' %}" class="img rounded-start w-100" alt="...">  
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-7 bg-dark text-white text-md-start text-center">
+              <div class="card-body ">
+                <h4 class="card-title fw-bold">2030</h4>
+                <p class="card-text lead">Egypt Vision 2030 is an ambitious national agenda launched in February 2016 by the Egyptian Government and unveiled by the Egyptian president Abdel-Fattah Al-Sisi. Formally known as the Sustainable Development Strategy (SDS): Egypt Vision 2030, the vision consists of eight main national goals to be met by 2030 that are in line with the United Nations Sustainable Development Goals (SDGs), and the Sustainable Development Strategy for Africa 2063.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col mx-auto my-1  ">
+        <div class="shadow-lg  bg-body ">
+	        <div class="card rounded">
+          
+          <div class="card-body text-center bg-success text-white">
+            <h2 class="fw-bold">Digital Era is BEGINING</h2>
+          
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

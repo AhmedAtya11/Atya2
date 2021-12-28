@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="bg-image " style="background-image: url('{% static 'img/pattern.svg' %}');
+    height: 100vh">
+    <div class="container col-xl-10 col-xxl-5 px-4 py-5 ">
+       
+        <div class="row align-items-center g-lg-5 py-5 ">
+          <div class="col-lg-7 text-center text-lg-start d-none d-sm-block text-white">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Welcome to the Digital Gate</h1>
+            <p class="col-lg-10 fs-4">You are a click away from joining the new era. Hope you enjoy there!</p>
+          </div>
+
+          <div class="col-md-10 mx-auto col-lg-5">
+            <div class="shadow  rounded">
+            <form class="p-4 p-md-5 border rounded-3 bg-white needs-validation" method="POST" >
+              {% csrf_token %}
+                <img class="d-block mx-auto" src="{% static 'img/trademark.svg' %}" style="width: 10rem; margin-bottom: 1rem;" alt="" >
+                <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="name" required>
+                <label for="floatingInput">Email address</label>
+		<div class="valid-feedback">
+     		 Looks good!
+    		</div>
+      		<div class="invalid-feedback">
+        	Please enter valid e-mail address!
+      		</div>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword"  name="password" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+		<div class="valid-feedback">
+     		 Looks good!
+    		</div>
+      		<div class="invalid-feedback">
+        	Please enter passwoed with given properties!
+      		</div>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+              <hr class="my-4">
+              <small class="text-muted">Don't have account yet? <a href="#Registeration">Register now</a> </small>
+            </form>
+		
+          </div>
+        </div>
+        </div>
+    </div>
+      </div>
+  
+{% endblock %}
